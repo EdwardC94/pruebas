@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="apple-mobile-web-app-title" content="Registro">
+        <meta name="application-name" content="Registro">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/css/images/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="../../assets/css/images/icons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="../../assets/css/images/icons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="../../assets/css/images/icons/manifest.json">
+        <link rel="mask-icon" href="../../assets/css/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+
+        <title>Gestión del riesgo en el mercado eléctrico</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap-reboot.min.css"
+              integrity="sha256-f5pPUePiefaggF4rDeeUCm0Qb/DA3YY+jSP3ffWJAOU=" crossorigin="anonymous" />
+
+        <link href="../../assets/css/custom.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600" rel="stylesheet">
+        <style>
+        @import url(https://fonts.googleapis.com/css?family=Monoton|Sacramento|Source+Sans+Pro|Permanent+Marker|Josefin+Sans:300);/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */@-ms-viewport{width:device-width}@-o-viewport{width:device-width}@viewport{width:device-width}#main-area{min-height:100vh;min-width:21rem;font-family:'Josefin-Sans'}section{min-height:100vh;font-family:'Josefin Sans';color:white;text-align:center;padding:90px 1.5rem;padding-top:7.75rem;background-image:none;transition:height 0.2s linear, padding 0.2s linear;width:100%}section.white-background{color:#132944;background:white}#exitoso,#evento-inactivo{display:flex;align-items:center;justify-content:center;flex-direction:column}#exitoso p,#evento-inactivo p{max-width:500px}#bg{margin:0;padding:0;min-height:0}.section-title{margin-bottom:2.5rem;font-size:2.875rem}@media (min-width: 544px){#main-area>section{padding-top:8.25rem}}@media (min-width: 768px){#main-area>section{padding-top:9.25rem}#disclaimer{flex-direction:row !important}}@media (min-width: 991px){#main-area>section{padding-top:11.25rem}}.bg-wrap{position:absolute;top:0;left:0;width:100%;height:100%}.bg-wrap .fixed-img{background-image:url(../../assets/css/images/blue_background.png);position:fixed;display:block;z-index:-1;top:0;height:100vh;width:100%;background-size:cover;background-position:center;-webkit-transform:translateZ(0);transform:translateZ(0)}.modal-footer{text-align:center !important}#aviso-precio{font-size:21px;font-weight:bold}#exportar-a-excel{margin-top:80px;text-align:center}.error-template{padding:40px 15px;text-align:center}#my-login-title{padding:20px 0 80px 0;text-align:center}.my-login-label{text-align:left !important}#my-login-button{display:flex;justify-content:center}.full-window{min-height:0;height:100%;display:flex;justify-content:center;flex-direction:column;padding:25% 0 !important;margin:0}#disclaimer{display:flex;justify-content:center;align-items:flex-start;flex-direction:column}#disclaimer-section{padding-top:3rem !important;padding-bottom:3rem;min-height:0}#disclaimer>p{flex:1 1 50%;padding:2rem;text-align:left}#welcome{padding-top:195px;display:flex;flex-direction:column;justify-content:center}#welcome>h2{font-weight:300;font-size:1.625rem;margin-bottom:2rem}#welcome>p{font-family:'Montserrat';font-size:0.8rem}#datos-welcome{margin-top:2rem;color:#cacaca}@media (min-width: 544px){#welcome{padding-top:4rem !important}}@media (min-width: 768px){#welcome>p{font-size:1rem}}#main-navigation{position:fixed;width:100%;z-index:2;line-height:1.2}#main-navigation-title{color:white;font-family:"Josefin Sans";font-weight:bold;font-size:1.70rem;padding:0.5em 0 0.5rem 0.5rem}#main-navigation-title>p{font-size:100%;margin:0;max-width:12rem}#main-navigation-title>p.fecha-del-evento{font-size:66.7%;color:#d8d8d8}#main-navigation-content{width:3.25rem;height:36px;text-align:right;background-color:rgba(19,41,68,0.9)}#main-navigation-content>.menu-icon{width:20px;height:20px;position:relative;margin:0.5em 1em 0 1em;display:inline-block}#main-navigation-content>.menu-icon:after{position:absolute;top:0;left:0;display:block;width:100%;height:2px;background:#fefefe;box-shadow:0 7px 0 #fefefe, 0 14px 0 #fefefe;content:''}#main-navigation-content>.menu-list{display:none;text-align:center}#main-navigation-content>.menu-list>a{display:block;color:white;font-family:'Josefin Sans';font-size:1.25rem;padding:0.5rem;font-weight:bold;text-decoration:none}#main-navigation-content>.menu-list>a:hover{background-color:gray}#main-navigation-content.open{width:9.5rem}#main-navigation-content.open>.menu-list{display:block;background-color:rgba(19,41,68,0.9)}#main-navigation>img{height:11rem;position:absolute;right:0;top:0}#main-navigation.scrolled>#main-navigation-title{background:rgba(19,41,68,0.9);font-size:1.45rem}@media (min-width: 34rem){#main-navigation-title{font-size:2.1rem}#main-navigation-title>p{max-width:15.5rem}#main-navigation>img{height:13.5rem}#main-navigation.scrolled #main-navigation-title{font-size:1.8rem}}@media (min-width: 49rem){#main-navigation-title{font-size:2.35rem}#main-navigation-title>p{max-width:32rem}#main-navigation-content{width:100%;background-color:transparent}#main-navigation-content .menu-icon{display:none}#main-navigation-content .menu-list{display:block;text-align:center;background-color:transparent !important}#main-navigation-content .menu-list a{padding:0.25rem 1.5rem;display:inline-block}#main-navigation>img{height:16rem}#main-navigation.scrolled #main-navigation-title{font-size:2.25rem}#main-navigation.scrolled #main-navigation-content{background:rgba(19,41,68,0.9)}}@media (min-width: 54rem){#main-navigation-title>p{max-width:36.5rem}}@media (min-width: 991px){#main-navigation-title{font-size:3.1rem}#main-navigation-title>p{max-width:43rem}#main-navigation>img{height:17.5rem}#main-navigation.scrolled #main-navigation-title{font-size:2.5rem}#main-navigation.scrolled #main-navigation-title>p{max-width:41rem}}#programa-items{text-align:left;width:100%;max-width:50rem;margin:auto}#programa-items ul,#programa-items ol{margin:0;list-style:none}.programa-item{display:flex;font-size:0.75rem;font-family:'Montserrat', sans-serif;margin-bottom:0.5rem;margin-top:0.5rem}.programa-item>span{color:black;padding:0.25rem 1rem}.programa-item>span.programa-item-hora{flex:1 1 35%}.programa-item>span.programa-item-details{flex:1 1 65%;display:flex;flex-direction:column}.programa-item>span.programa-item-details>ol{list-style:none}.programa-item .programa-speaker-first,.programa-item .moderador{margin-top:1.5rem}.programa-item-blue{background-color:#132944}.programa-item-blue>span{color:white}@media (min-width: 544px){.programa-item>span.programa-item-hora{flex:1 1 25%}.programa-item>span.programa-item-details{flex:1 1 75%}}@media (min-width: 768px){.programa-item>span.programa-item-hora{flex:1 1 15%}.programa-item>span.programa-item-details{flex:1 1 85%}}.speaker{font-size:0.9rem;margin-bottom:0}.speaker-info{font-size:0.8rem}.speaker,.speaker-info{font-family:"Montserrat"}#registro>div>form{display:flex;flex-direction:column;width:100%;max-width:50rem;margin:auto}#registro-fields{flex:1 1 70%;text-align:70%}#registro-fields>.registro-field{display:flex;flex-direction:row;margin-bottom:0.5rem}#registro-fields>.registro-field>label{flex:1 1 30%;color:black;font-weight:bold;margin-bottom:0;display:block;text-align:right;padding:3px 8px}#registro-fields>.registro-field>input{flex:1 1 70%;display:block;width:100%;height:34px;padding:6px 12px;font-size:14px;line-height:1.42857143;color:#555;background-color:#fff;border:1px solid #ccc;border-radius:4px;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);box-shadow:inset 0 1px 1px rgba(0,0,0,0.075)}#registro-fields>.registro-field-check{display:flex;align-items:center;text-align:left;margin-bottom:1rem}#registro-fields>.registro-field-check .checkbox-container{flex:1 1 30%;text-align:right;padding:0 10px}#registro-fields>.registro-field-check>label{flex:1 1 70%;margin-bottom:0;line-height:1.2;font-weight:bold}#registro-fields>.registro-field-check>input{margin:0 1rem;min-width:2rem;color:#132944}#singlebutton{background-image:linear-gradient(to bottom, #173152, #132944);color:white;border:0.0625rem solid white;border-radius:5%;padding:1rem 1rem;cursor:pointer}#registro-button{margin-bottom:1rem}@media (min-width: 768px){#registro>div>form{flex-direction:row}#registro-button{margin-left:1rem;display:flex;align-items:flex-end}.registro-field>label{flex:1 1 20%}.registro-field>input{flex:1 1 80%}}.error-container{margin-bottom:10px}.error{color:red;font-weight:bold;margin-bottom:0}#registro.lo-sentimos{min-height:0;height:50%}#registro.lo-sentimos>p{font-size:1.25rem;font-weight:bold}#sponsors{display:flex;justify-content:center;flex-direction:column;padding-bottom:0;min-height:0;padding:0 !important;margin-bottom:-8rem}#sponsors>h1{margin-bottom:4rem;padding:2rem;color:#2a3d56;font-size:2.25rem}#sponsors>h3{font-size:1.5rem}#sponsors>#sponsors-logos{padding:2rem}#sponsors>#sponsors-logos>img{height:5.5rem;margin:1.5rem}
+/*# sourceMappingURL=custom.min.css.map */
+        </style>
+        <script>
+        !function () {
+
+    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+        var a = document.createElement("style");
+        a.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}")),
+                document.querySelector("head").appendChild(a);
+    }
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        //console.log(scroll);
+        if (scroll > 0) {
+            //console.log('a');
+            $("#main-navigation").addClass("scrolled");
+        } else {
+            //console.log('a');
+            $("#main-navigation").removeClass("scrolled");
+        }
+    });
+    $('#menu-icon').click(function () {
+        $('#main-navigation-content').toggleClass("open");
+    });
+    $('#main-navigation-content').on("mouseleave", function () {
+        $('#main-navigation-content').removeClass("open");
+    });
+    $('#main-area').css("height", screen.height - 150);
+
+}();
+
+        </script>
+
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+    
+    <#include "../layout/header.ftl.html"/>
+<div id="main-area" class="container-fluid">
+    <div id="main-navigation">
+
+        <div id="main-navigation-title">
+            <p><span>GESTI&Oacute;N DEL RIESGO EN</span><span>&nbsp;EL MERCADO EL&Eacute;CTRICO</span></p>
+        </div>
+
+
+
+        <div id="main-navigation-content">
+            <div id="menu-icon" class="menu-icon"></div>
+            <div class="menu-list">
+                <a href="#agenda" target="_self">Agenda</a>
+                <a href="#ponentes" target="_self">Ponentes</a>
+                <#if !flash.success??>
+                <a href="#registro" target="_self">Registro</a>
+                </#if>
+            </div>
+
+        </div>
+        <img src="../../assets/css/images/logos.png" alt="company logo">
+    </div>
+
+    <#if flash.success??>
+    <section id="exitoso">
+
+        <h1>&#161;ENHORABUENA!</h1>
+        <p>Hemos recibido tus datos.
+            Te notificaremos en caso de que
+            hayas sido seleccionado para
+            realizar el pago ($3,000.00 + iva)
+            y poder quedar registrado.
+        </p>
+        <p>Puedes continuar de vuelta a la forma si necesitas registrar a alguien m&aacute;s</p>
+    </section>
+    </#if>
+
+
+    <section id="bg">        
+        <div class="bg-wrap"><div class="fixed-img"></div></div>
+    </section>
+
+    <#if !flash.success??>
+    <section id="welcome">
+
+        <h1 class="section-title">Bienvenido</h1>
+        <h2>A QUI&Eacute;N VA DIRIGIDO</h2>
+
+        <p>A generadores el&eacute;ctricos en su funci&oacute;n de gestores de despacho de plantas, pues el riesgo les afecta directamente.</p>
+
+        <p>A consumidores de electricidad en su funci&oacute;n de responsables de compras.</p>
+
+        <p>A otro tipo de Participantes del Mercado (ERC & Comercializadores no Suministradores). </p>
+
+        <p>A todos los stakeholders que rodean la realidad de generadores y consumidores como son: instituciones financieras.</p>
+
+        <p id="datos-welcome">
+            <small>
+                3 de Mayo, 2017<br />
+                Bolsa Mexicana de Valores<br />
+                Paseo de la Reforma 255, Col. Cuauht&eacute;moc, CDMX<br />
+                8:00 AM                
+            </small>
+        </p>
+    </section>
+    </#if>
+
+    <section id="agenda" class="white-background">
+        <h1 class="section-title">Agenda</h1>
+        <div id="programa-items">
+            <div class="programa-item programa-item-blue">
+                <span class="programa-item-hora">8:00 8:30</span>
+                <span class="programa-item-details">
+                    <strong>Registro</strong>
+                </span>
+            </div>
+            <div class="programa-item ">
+                <span class="programa-item-hora">8:30 8:40</span>
+                <span class="programa-item-details">
+                    <strong>Bienvenida.</strong> Apertura del seminario y bienvenida
+                </span>
+            </div>
+            <div class="programa-item">
+                <span class="programa-item-hora">8:45 9:35</span>
+                <span class="programa-item-details">
+                    <strong>INTRODUCCI&Oacute;N Y CONTEXTO AL MERCADO DE ENERG&Iacute;A EN M&Eacute;XICO (MERCADO F&Iacute;SICO)</strong>
+                    <span>a. Reforma el&eacute;ctrica</span>
+                    <span>b. Mercado de Corto Plazo</span>
+                    <span>c. Mercado para el Balance de Potencia</span>
+                    <span>d. Subasta a largo plazo y Subasta a mediano plazo</span>
+                    <span>e. CEL's</span>
+                    <span class="programa-speaker-first"><strong>Mtro. Jeff Thomas Pavlovic</strong>, Director de Seguimiento y Coordinaci&oacute;n, <strong>SENER</strong></span>
+
+                </span>
+            </div>
+            <div class="programa-item">
+                <span class="programa-item-hora">9:40 10:45</span>
+                <span class="programa-item-details">
+                    <strong>FORMACI&Oacute;N DE PRECIOS EN MERCADO EL&Eacute;CTRICO MAYORISTA </strong>
+                    <span>a. Precios Marginales Locales: riesgos inherentes</span>
+                    <span>b.&Iacute;ndice: subyacente</span>
+                    <span>c. Contrato de Cobertura</span>
+                    <ol>
+                        <li>&nbsp;&nbsp;i. TBFin</li>
+                        <li>&nbsp;ii. TBPot</li>
+                    </ol>
+                    <span class="programa-speaker-first"><strong>Ing. Marcos R. Valenzuela</strong>, Dir. Administraci&oacute;n de Mercado El&eacute;ctrico Mayorista, <strong>CENACE</strong></span>
+
+                </span>
+            </div>
+            <div class="programa-item programa-item-blue">
+                <span class="programa-item-hora">10:45 11:00</span>
+                <span class="programa-item-details">
+                    <strong>Networking Coffee Break patrocinado por TRADEON</strong>
+                </span>
+            </div>
+            <div class="programa-item">
+                <span class="programa-item-hora">11:00 11:50</span>
+                <span class="programa-item-details">
+                    <strong>RIESGOS EN EL MERCADO EL&Eacute;CTRICO</strong>
+                    <span>a. Tipos de Riesgo: precio, volumen, operaci&oacute;n, legal</span>
+                    <span>b. Concepto de derivado financiero</span>
+                    <span>c. Gesti&oacute;n del Riesgo de Precios y Coberturas</span>
+                    <ol>
+                        <li>&nbsp;&nbsp;i. Identificaci&oacute;n - Gesti&oacute;n de carteras: Posiciones</li>
+                        <li>&nbsp;ii. Cuantificaci&oacute;n - Estad&iacute;sticos</li>
+                        <li>iii. Coberturas</li>
+                    </ol>
+                    <span>d. Relaci&oacute;n Electricidad / Gas / Combust&oacute;leo</span>
+
+                </span>
+            </div>
+            <div class="programa-item">
+                <span class="programa-item-hora">11:55 12:55</span>
+                <span class="programa-item-details">
+                    <strong>MERCADOS Y PRODUCTOS FINANCIEROS EN EL MERCADO EL&Eacute;CTRICO</strong>
+                    <span>a. Mercados Financieros / Mercados de derivados</span>
+                    <ol>
+                        <li>&nbsp;&nbsp;i. Mercados organizados</li>
+                        <li>&nbsp;ii. Mercados O.T.C.</li>
+                    </ol>
+                    <span>b. Productos derivados</span>
+                    <ol>
+                        <li>Definici&oacute;n: Futuros, forwards, swaps, opciones</li>
+                        <li>Aplicaci&oacute;n pr&aacute;ctica: estrategias de cobertura</li>
+                    </ol>
+                    <span class="programa-speaker-first"><strong>Lic. Jos&eacute; Miguel de Dios</strong>, Dir. Servicios Transaccionales de Derivados, <strong>MEXDER (GRUPO BMV)</strong></span>
+                    <span><strong>Lic. Enrique Gim&eacute;nez</strong>, Director, <strong>Fisterra Energy M&eacute;xico</strong></span>
+                    <span><strong>Ing. Drew Wozniak</strong>, Vicepresidente Desarrollo y An&aacute;lisis de Mercado, <strong>ICAP</strong></span>
+                </span>
+            </div>
+            <div class="programa-item">
+                <span class="programa-item-hora">13:00 13:50</span>
+                <span class="programa-item-details">
+                    <strong>Panel I: "GESTI&Oacute;N DE RIESGO EN EL MERCADO EL&Eacute;CTRICO"</strong>
+                    <span class="programa-speaker-first"><strong>Act. Guillermo Turrent</strong>, Director, <strong>CFE Energ&iacute;a</strong></span>
+                    <span><strong>Mtra. Katya Sohomano</strong>, Directora, <strong>CFE Calificados</strong></span>
+                    <span><strong>Ing. Antonio Zapata</strong>, Presidente, <strong>Asociaci&oacute;n Mexicana de Suministradores Calificados</strong></span>
+                    <span><strong>Lic. Francisco Con Garza</strong>, Director Desarrollo de Negocio, <strong>CEMEX Energ&iacute;a</strong></span>
+                    <span class="moderador">Moderador: <strong>Mtro. Francisco Salazar</strong>, Socio Fundador, <strong>ENIX, S.C.</strong></span>
+                </span>
+            </div>
+            <div class="programa-item programa-item-blue">
+                <span class="programa-item-hora">14:00 15:30</span>
+                <span class="programa-item-details">
+                    <strong>Networking Lunch</strong>
+                </span>
+            </div>
+            <div class="programa-item">
+                <span class="programa-item-hora">15:30 16:30</span>
+                <span class="programa-item-details">
+                    <strong>Panel II: "MERCADOS EL&Eacute;CTRICOS FINANCIEROS"</strong>
+                    <span class="programa-speaker-first"><strong>Lic. Salvador Alarc&oacute;n</strong>, Socio Fundador,  <strong>Tradeon</strong></span>
+                    <span><strong>Lic. James Fowler</strong>, Editor, <strong>ICIS Mexico Report</strong></span>
+                    <span class="moderador">Moderador: <strong>Ing. Eduardo Reyes</strong>, Socio, <strong>PWC</strong></span>                    
+
+                </span>
+            </div>
+            <div class="programa-item">
+                <span class="programa-item-hora">16:35 17:10</span>
+                <span class="programa-item-details">
+                    <strong>FUNDAMENTOS LEGALES</strong>
+                    <span class="programa-speaker-first"><strong>Dr. Thomas Mueller</strong>, Socio Fundador, <strong>Ritch Mueller</strong></span>
+                </span>
+            </div>
+            <div class="programa-item">
+                <span class="programa-item-hora">17:45</span>
+                <span class="programa-item-details">
+                    <strong>DISCURSO DE CLAUSURA</strong>
+                    <span class="programa-speaker-first"><strong>Dr. César Emiliano Hernández Ochoa</strong>, Subsecretario de Electricidad, <strong>SENER</strong></span>
+                </span>
+            </div>
+            <div class="programa-item programa-item-blue">
+                <span class="programa-item-hora">17:30</span>
+                <span class="programa-item-details">
+                    <strong>Networking Cocktail, patrocinado por ICIS MEXICO REPORT</strong>
+                </span>
+            </div>
+        </div>
+    </section>
+    <section id="ponentes" >
+        <h1 class="section-title">Ponentes</h1>
+
+        <p class="speaker">ING. ANTONIO ZAPATA</p>
+        <p class="speaker-info">Presidente, Asoc. Mexicana de Suministradores Calificados</p>
+
+        <p class="speaker">ING. DREW WOZNIAK</p>
+        <p class="speaker-info">Vicepresidente Desarrollo y An&aacute;lisis de Mercado, ICAP</p>
+
+        <p class="speaker">LIC. ENRIQUE GIM&Eacute;NEZ</p>
+        <p class="speaker-info">Director General, Fisterra Energy Mexico</p>
+
+        <p class="speaker">LIC. FRANCISCO CON GARZA</p>
+        <p class="speaker-info">Dir. Desarrollo de Negocio, CEMEX Energ&iacute;a</p>
+
+        <p class="speaker">MTRO. FRANCISCO SALAZAR</p>
+        <p class="speaker-info">Socio Fundador, Enix, S.C.</p>
+
+        <p class="speaker">ACT. GUILLERMO TURRENT</p>
+        <p class="speaker-info">Director General, CFE Energ&iacute;a</p>
+
+        <p class="speaker">LIC. JAMES FOWLER</p>
+        <p class="speaker-info">Editor, ICIS Mexico Report</p>
+
+        <p class="speaker">MTRO. JEFF T. PAVLOVIC</p>
+        <p class="speaker-info">Dir. Gral. de Seguimiento y Coor. de la Industria El&eacute;ctrica, Sener</p>
+
+        <p class="speaker">LIC: JOS&Eacute; MIGUEL DE DIOS</p>
+        <p class="speaker-info">Dir. Servicios Transaccionales de Derivados, MEXDER (GRUPO BMV)</p>
+
+        <p class="speaker">MTRA. KATYA SOMOHANO</p>
+        <p class="speaker-info">Directora General, CFE Califcados</p>
+
+        <p class="speaker">ING. MARCOS RICARDO VALENZUELA ORTIZ</p>
+        <p class="speaker-info">Dir. Administraci&oacute;n de Mercado El&eacute;ctrico Mayorista, CENACE</p>
+
+        <p class="speaker">LIC. SALVADOR ALARC&Aacute;N</p>
+        <p class="speaker-info">Socio Fundador, Tradeon</p>
+
+        <p class="speaker">DR. THOMAS MUELLER</p>
+        <p class="speaker-info">Socio, Ritch Mueller</p>
+
+        <p class="speaker">DR. CÉSAR EMILIANO HERNÁNDEZ OCHOA</p>
+        <p class="speaker-info">Subsecretario de Electricidad, SENER</p>
+
+    </section>
+    <section id="sponsors" class="white-background">
+        <h1 class="section-title">Patrocinadores</h1>
+        <h3 id="sponsors-subtitle">Agradecemos a nuestros patrocinadores, sin quienes este evento no ser&iacute;a posible:</h3>
+        <div id="sponsors-logos">
+            <img src="../../assets/css/images/logo-tradeon.png" alt="sponsor-logo">
+            <img src="../../assets/css/images/logo-icis.png" alt="sponsor-logo">
+            <img src="../../assets/css/images/logo-bmv.png" alt="sponsor-logo">
+        </div>
+    </section>
+    <#if flash.eventoActivo?? && !flash.success??>
+    <section id="registro" class="white-background">
+        <div>
+            <h1 class="section-title">Registro</h1>
+            <p id="aviso-precio">El evento tiene un costo de $3,000.00 + IVA.
+                <br><small>Todos los campos son obligatorios</small>
+            </p>
+            <div class="error-container">
+                <#if flash.error??>
+                <p class="error">${flash.error}</p>
+                </#if>
+                <#list validation.violations as violation>
+                <p class="error">${i18n(violation)}</p>
+                </#list>
+            </div>
+            <form id="formaRegistro" action="/#registro" method="post">
+                <div id="registro-fields">
+
+                    <div class="registro-field">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" name="nombre" type="text" value="${registro.nombre?if_exists}" />
+                    </div>
+
+                    <div class="registro-field">
+                        <label for="puesto">Puesto</label>
+                        <input id="puesto" name="puesto" type="text" value="${registro.puesto?if_exists}" />
+                    </div>
+
+                    <div class="registro-field">
+                        <label for="empresa">Empresa</label>
+                        <input id="empresa" name="empresa" type="text" value="${registro.empresa?if_exists}" />
+                    </div>
+
+                    <div class="registro-field">
+                        <label for="email">Correo</label>
+                        <input id="email" name="email" type="text" value="${registro.email?if_exists}" />
+                    </div>
+
+                    <div class="registro-field">
+                        <label for="telefono">Tel&eacute;fono</label>
+                        <input id="telefono" name="telefono" type="text" value="${registro.telefono?if_exists}" />
+                    </div>
+
+                    <div class="registro-field-check">
+                        <div class="checkbox-container">
+                            <#if registro.aceptoDatos?? && registro.aceptoDatos=="on">
+                            <input type="checkbox" name="aceptoDatos" id="aceptoDatos" checked="checked" />
+                            <#else>
+                            <input type="checkbox" name="aceptoDatos" id="aceptoDatos" />
+                            </#if>
+
+                        </div>
+
+                        <label for="checkbox-0">
+                            <small>Acepto que mis datos sean agregados a una base para su previo an&aacute;lisis y selecci&oacute;n para recibir un formato de registro.</small>
+                        </label>
+                    </div>
+
+                    <!-- Commented unless the client decides to include it as an option.
+                    <div class="registro-field-check">
+                        <div class="checkbox-container">
+                                            <#if registro.aceptoProcesoPago?? && registro.aceptoProcesoPago=="on">
+                                                 <input type="checkbox" name="aceptoProcesoPago" id="aceptoProcesoPago" checked="checked" />
+                                            <#else>
+                                                 <input type="checkbox" name="aceptoProcesoPago" id="aceptoProcesoPago" />
+                                            </#if>
+    
+    
+                        </div>
+                        <label for="checkbox-1">
+                            <small>Acepto que a partir de ahora entrar&eacute; en un proceso de selecci&oacute;n para poder realizar el pago ($3,000.00 + iva) y poder asistir en el d&iacute;a y la hora del evento.</small>
+                        </label>
+    
+                    </div>
+                    -->
+                </div>
+                <div id="registro-button">
+                    <input id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit" value="Registro" />
+                </div>
+                <@authenticityForm/>
+            </form>
+            <p id="aviso-precio"><br>
+                <small>
+                    Fisterra Energy se pondr&aacute; en contacto para confirmar la disponibilidad ya que el aforo es limitado.<br />
+                    Fisterra Energy M&eacute;xico se reserva el derecho de admisión.<br />
+                    El plazo de inscripción se cerrar&aacute; el 28 de Abril, 2017.
+                </small>
+            </p>
+
+        </div>
+    </section>
+    <#elseif !flash.eventoActivo??>
+    <section id="registro" class="white-background lo-sentimos">
+        <h1 class="section-title">Lo sentimos</h1>
+        <p>
+            Este evento ya no acepta m&aacute;s registros.
+        </p>
+    </section>
+    </#if>
+    <section id="disclaimer-section">        
+        <h1 class="section-title">Aviso de privacidad:</h1>
+        <div id="disclaimer">
+            <p><strong>Espa&ntilde;ol</strong><br />
+                <small>
+                    De conformidad con la Ley Federal de Protecci&oacute;n de Datos Personales en Posesi&oacute;n de los Particulares, le informamos que Fisterra Energy M&eacute;xico, S. de R.L. de C.V., (en adelante, FISTERRA), con domicilio social en Torre Terret Norte, Piso 12, Av. Miguel de Cervantes Saavedra No. 301, Col. Granada, Ciudad de M&eacute;xico, es responsable del tratamiento y &uacute;nico receptor de sus datos personales y ponemos en su conocimiento que la informaci&oacute;n de nuestros clientes (correo electr&oacute;nico, representante, domicilio, tel&eacute;fono, datos de contacto) es tratada de forma estrictamente confidencial. Los datos personales ser&aacute;n utilizados &uacute;nica y exclusivamente para los fines de divulgar la informaci&oacute;n y hacer una presentaci&oacute;n sobre el Mercado El&eacute;ctrico Mexicano. Para prevenir el acceso no autorizado a sus datos personales y con el fin de asegurar que la informaci&oacute;n sea utilizada &uacute;nicamente para los fines establecidos en este aviso de privacidad, hemos establecido diversos procedimientos con la finalidad de evitar el uso o divulgaci&oacute;n no autorizados de sus datos. Todos sus datos personales son tratados como confidenciales de acuerdo a la legislaci&oacute;n aplicable y vigente en el pa&iacute;s, pudiendo ser transferidos &uacute;nicamente a sociedades controladoras, subsidiarias o afiliadas bajo el control com&uacute;n o del mismo grupo corporativo de Fisterra.
+                    Usted da su consentimiento para el tratamiento de sus datos para los prop&oacute;sitos citados, pudiendo limitar el uso o divulgaci&oacute;n de sus datos, as&iacute; como ejercer sus derechos de acceso, rectificaci&oacute;n, cancelaci&oacute;n y oposici&oacute;n (ARCO) llamando al tel&eacute;fono +52 55 5125 1675. A trav&eacute;s de estos canales Usted podr&aacute; actualizar sus datos y especificar el medio por el cual desea recibir informaci&oacute;n o inclusive de no recibirla, ya que en caso de no contar con esta especificaci&oacute;n de su parte, Fisterra establecer&aacute; libremente el canal que considere pertinente para enviarle dicha informaci&oacute;n.
+                </small>
+            </p>
+            <p><strong>English</strong><br />
+                <small>
+                    In compliance with the Federal Law on Protection of Personal Data, Fisterra Energy México, S. de R.L. de C.V. (hereinafter FISTERRA), located in Torre Terret Norte, 12, Av. Miguel de Cervantes Saavedra No. 301, Col. Granada, Ciudad de México, is responsible of the processing and sole receiver of the personal data and notifies that all our customer information (email, representative, address, telephone number, contact details) is used in a strictly and confidentially way. Personal data will be used unique and exclusively with the purpose of disclosing the information and offering a presentation regarding the Mexican Wholesale Power Market. To prevent the unauthorized access to your personal data and with the aim of ensure all the information will be used for the purposes specified in this privacy notice, we have established several procedures in order to avoid the unauthorized use or disclosure of your data. All the personal data is confidential in compliance with the applicable and current Law in the country, may be transferred solely to holding companies, subsidiaries or affiliated under the common control or the same corporative group of Fisterra. 
+                    You give your consent to process this data for the above mentioned purposes, being able of exercise your rights of access, rectification, cancellation and objection telephoning to +52 55 5125 1675. Through these channels you can update
+                </small>
+            </p>
+        </div>
+    </section>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="resources/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="../../assets/js/custom.min.js"></script>
+
+</body>
+</html>
